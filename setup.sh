@@ -49,3 +49,13 @@ EOF
 mkdir -p ~/.vim/colors
 curl https://raw.githubusercontent.com/marciomazza/vim-brogrammer-theme/master/colors/brogrammer.vim > ~/.vim/colors/brogrammer.vim
 
+# Get sudo password
+read -r -s -p "[sudo] sudo password for $(whoami):" pass
+
+# Install brew packages
+if ! which brew
+then
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+else
+	echo "Brew not exists"
+fi
