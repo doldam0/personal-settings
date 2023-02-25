@@ -30,9 +30,11 @@ cask "slack"
 cask "steam"
 cask "visual-studio-code"
 cask "zoom"
+mas "Final Cut Pro", id: 424389933
 mas "Keynote", id: 409183694
 mas "Logic Pro", id: 634148309
 mas "MainStage", id: 634159523
+mas "Motion", id: 434290957
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "RunCat", id: 1429033973

@@ -52,10 +52,11 @@ curl https://raw.githubusercontent.com/marciomazza/vim-brogrammer-theme/master/c
 # Get sudo password
 read -r -s -p "[sudo] sudo password for $(whoami):" pass
 
-# Install brew packages
+# Install homebrew
 if ! which brew
 then
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-else
-	echo "Brew not exists"
 fi
+
+# Install brew packages
+brew bundle --file=./Brewfile
