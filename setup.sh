@@ -18,7 +18,7 @@ mkdir -p ~/.iterm && curl https://raw.githubusercontent.com/mbadolato/iTerm2-Col
 # Set vimrc
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
-cat <<EOF >> ~/.vimrc
+cat <<EOF >> ~/.vim_runtime/my_configs.vim
 set hlsearch
 set nu
 set autoindent
